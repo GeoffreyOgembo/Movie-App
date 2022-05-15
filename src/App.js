@@ -2,7 +2,7 @@
 
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
 } from "react-router-dom";
 
@@ -19,11 +19,11 @@ const App = () => {
     <Router>
       <Navbar />
       <div className="container">
-        <Switch>
-          <Route exact path="/" element={<HomePage/>} />
-          <Route exact path="/about" element={<AboutPage/>} />
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/about" element={<AboutPage/>} />
           <Route path="/singleshow/:id" element={<SinglePage/>} />
-        </Switch>
+        </Routes>
       </div>
     </Router>
   );
