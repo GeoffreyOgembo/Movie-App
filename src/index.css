@@ -17,7 +17,7 @@ body {
 img {
   width: 210px;
   height: 295px;
-  object-fit: cover;
+  background-image: cover;
 }
 
 /* Utilts */
@@ -168,11 +168,11 @@ img {
   padding: 5px;
 }
 
-/* Homepage Styles */
+/* Homepage Styles 
 .homepage__list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-}
+}*/
 
 /* Single Show Page Styles */
 .singleshow {
