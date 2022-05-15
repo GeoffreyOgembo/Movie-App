@@ -22,7 +22,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" element={<HomePage/>} />
           <Route exact path="/about" element={<AboutPage/>} />
-          <Route path="/singleshow/:id" component={SinglePage} />
+          <Route path="/singleshow/:id" component={<SinglePage/>} />
         </Switch>
       </div>
     </Router>
