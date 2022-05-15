@@ -21,7 +21,7 @@ const App = () => {
       <div className="container">
         <Switch>
           <Route exact path="/" element={<HomePage/>} />
-          <Route exact path="/about" component={<AboutPage/>} />
+          <Route exact path="/about" element={<AboutPage/>} />
           <Route path="/singleshow/:id" component={SinglePage} />
         </Switch>
       </div>
