@@ -1,4 +1,4 @@
-/*import { BrowserRouter as Router, Switch, Route } from "react-router-dom";*/
+/*import React { BrowserRouter as Router, Switch, Route } from "react-router-dom";*/
 
 import {
   BrowserRouter as Router,
@@ -20,9 +20,9 @@ const App = () => {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route exact path="/" element={<HomePage/>} />
-          <Route path="/about" element={<AboutPage/>} />
-          <Route path="/singleshow/:id" element={<SinglePage/>} />
+          <Route exact path="/" component={<HomePage/>} />
+          <Route path="/about" component={<AboutPage/>} />
+          <Route path="/singleshow/:id" component={<SinglePage/>} />
         </Routes>
       </div>
     </Router>

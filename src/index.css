@@ -11,6 +11,9 @@
 }
 
 body {
+  background-image: url("./background.png");
+  background-size: cover;
+  height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -52,6 +55,7 @@ img {
 
 /* Navbar Styles */
 .navbar {
+  
   padding: 1rem;
   background: var(--dark-color);
 }
