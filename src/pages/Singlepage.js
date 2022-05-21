@@ -1,4 +1,5 @@
 import { useEffect, useContext } from "react";
+import { useParams } from "react-router-dom";
 
 // Context
 import ShowsContext from "../context/shows/showsContext";
@@ -9,14 +10,16 @@ import Loader from "../components/Loader";
 const Singlepage = ({ match }) => {
   const { getSingleShow, singleShow, loading } = useContext(ShowsContext);
 
+  const params = useParams()
   useEffect(() => {
-    getSingleShow(match.params.id);
+    getSingleShow(params.id);
+    console.log(params);
 
     // eslint-disable-next-line
   }, []);
 
   const removeTags = (text) => {
-    if (text === null || text === "") {
+    if (text === null || text === ".") {
       return false;
     } else {
       text = text.toString();
