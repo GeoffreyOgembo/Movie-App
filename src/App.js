@@ -13,6 +13,7 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/Homepage";
 import AboutPage from "./pages/Aboutpage";
 import SinglePage from "./pages/Singlepage";
+import FourOhFour from "./pages/404";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route exact path="/" element={<HomePage/>} />
           <Route exact path="/about" element={<AboutPage/>} />
           <Route exact path="/singleshow/:id" element={<SinglePage/>} />
+          <Route exact path="*" element={<FourOhFour/>} />
         </Routes>
       </div>
     </Router>
