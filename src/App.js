@@ -20,9 +20,9 @@ const App = () => {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route exact path="/" component={<HomePage/>} />
-          <Route path="/about" component={<AboutPage/>} />
-          <Route path="/singleshow/:id" component={<SinglePage/>} />
+          <Route exact path="/" element={<HomePage/>} />
+          <Route exact path="/about" element={<AboutPage/>} />
+          <Route exact path="/singleshow/:id" element={<SinglePage/>} />
         </Routes>
       </div>
     </Router>
