@@ -5,7 +5,7 @@ const Aboutpage = () => {
         <div className="about__info">
           <p>Tv Show Search App</p>
           <div>
-            <p>Things learnt from app build:</p>
+            <p>Technologies used in the App:</p>
             <ul>
               <li>React (create-react-app)</li>
               <li>Basic CSS & HTML</li>
