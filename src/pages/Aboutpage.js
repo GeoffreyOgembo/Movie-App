@@ -8,7 +8,7 @@ const Aboutpage = () => {
             <p>Technologies used in the App:</p>
             <ul>
               <li>React (create-react-app)</li>
-              <li>Basic CSS & HTML</li>
+              <li>CSS & HTML</li>
               <li>Axios AJAX Request</li>
               <li>TVMAZE API (https://www.tvmaze.com/api)</li>
               <li>React Router</li>
