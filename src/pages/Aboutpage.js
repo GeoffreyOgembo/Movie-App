@@ -9,7 +9,7 @@ const Aboutpage = () => {
             <ul>
               <li>React (create-react-app)</li>
               <li>CSS & HTML</li>
-              <li>Axios AJAX Request</li>
+              <li>Axios Ajax Request</li>
               <li>TVMAZE API (https://www.tvmaze.com/api)</li>
               <li>React Router</li>
               <li>React Context API</li>
