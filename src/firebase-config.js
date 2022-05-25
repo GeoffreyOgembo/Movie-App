@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 const firebaseConfig = {
     apiKey: "AIzaSyCfUVWbs_D9XZPjIrlgi6aYIubwmbBBYdI",
     authDomain: "tv-show-app-c32f6.firebaseapp.com",
