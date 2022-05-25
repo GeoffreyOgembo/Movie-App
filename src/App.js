@@ -1,5 +1,5 @@
 /*import React { BrowserRouter as Router, Switch, Route } from "react-router-dom";*/
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 import {
   BrowserRouter as Router,
@@ -15,9 +15,20 @@ import HomePage from "./pages/Homepage";
 import AboutPage from "./pages/Aboutpage";
 import SinglePage from "./pages/Singlepage";
 import FourOhFour from "./pages/404";
+import { collection, getDocs } from "firebase/firestore";
+import {db} from "./firebase-config";
+
+
 
 const App = () => {
   const [users, setUsers] = useState([])
+  const usersCollectionRef = collection(db, "users")
+  useEffect(() => {
+    const getUsers = async () =>{
+      const data = await getDocs(usersCollectionRef)
+    }
+
+  },[])
   return (
     <Router>
       <Navbar />
