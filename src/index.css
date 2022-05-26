@@ -107,12 +107,13 @@ img {
 }
 
 .searchbar__form > input {
-  width: 100%;
+  width: 90%;
   padding: 10px 17px;
   border: 1px solid var(--dark-color);
   background: var(--offwhite-color);
   color: var(--dark-color);
   font-size: 20px;
+  border-radius: 15px;
   /* outline-width: 0ch; */
 }
 
@@ -148,7 +149,7 @@ img {
 .listitem {
   text-decoration: none;
   width: 210px;
-  background: var(--offwhite-color);
+  background: #ffffff;
   box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
     0 3px 1px 0 rgba(20, 23, 28, 0.1);
   margin: 1rem auto;
@@ -201,11 +202,11 @@ img {
   margin: 0.5rem 1rem 0.5rem 0;
   padding: 10px 17px;
   background: var(--secondary-color);
-  color: var(--offwhite-color);
+  color: #ffffff;
 }
 
 /* About page Styles */
-.about {
+/* .about {
   margin: 2rem 0;
   width: 100%;
 }
@@ -228,7 +229,7 @@ img {
 .about__info > div > ul > li {
   margin-left: 2rem;
   padding: 0.5rem;
-}
+} */
 h3{
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
@@ -285,10 +286,10 @@ button{
   flex-direction: column;
 }
 button:hover{
-  color: #DE9A15;
+  color: #2fcf2c;
 }
 button:active{
-  color: #DE9A15;
+  color: #2fcf2c;
 }
 .sign{
   height: 30px;
