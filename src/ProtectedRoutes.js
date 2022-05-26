@@ -1,8 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom';
-import Loginpage from './pages/Loginpage';
-// import Homepage from './pages/Homepage';
-// import { Outlet } from 'react-router-dom';
+import LoginPage from './pages/Loginpage';
 
 const useAuth = () => {
     const user = {loggedIn: false}
@@ -12,7 +10,7 @@ const useAuth = () => {
 const ProtectedRoutes = () => {
     const isAuth = useAuth();
   return (
-    isAuth? <Outlet/> : <Loginpage/>
+    isAuth? <Outlet/> : <LoginPage/>
   )
 }
 

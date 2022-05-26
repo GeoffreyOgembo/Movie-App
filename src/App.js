@@ -23,11 +23,12 @@ const App = () => {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route exact path="/login" element={<LoginPage/>} />
-          <Route element = {<ProtectedRoutes/>}/>
-          <Route exact path="/" element={<HomePage/>} />
+          <Route exact path="/" element={<LoginPage/>} />
+          <Route element = {<ProtectedRoutes/>}>
+          <Route exact path="/home" element={<HomePage/>} />
           <Route exact path="/singleshow/:id" element={<SinglePage/>} />
           <Route exact path="*" element={<FourOhFour/>} />
+          </Route>
         </Routes>
       </div>
     </Router>

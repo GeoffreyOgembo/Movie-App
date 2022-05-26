@@ -289,3 +289,10 @@ button:active{
   align-items: center;
   justify-content: center;
 }
+input, button{
+  appearance: none;
+  border: none;
+  /* background: none; */
+  outline: none;
+  border-radius: 5px;
+}

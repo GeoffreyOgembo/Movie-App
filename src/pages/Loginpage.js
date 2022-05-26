@@ -1,4 +1,6 @@
 import { useState } from "react";
+
+import { useNavigate } from "react-router-dom";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -12,6 +14,7 @@ function Loginpage() {
   const [registerPassword, setRegisterPassword] = useState("");
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
+  let navigate = useNavigate();
 
   const [user, setUser] = useState({});
 
@@ -50,7 +53,8 @@ function Loginpage() {
   };
 
   return (
-    <div className="App">
+    <card>
+      <div className="App">
       <div>
         <h3> Register User </h3>
         <input
@@ -91,7 +95,10 @@ function Loginpage() {
       {user?.email}
 
       <button onClick={logout} className ="sign"> Sign Out </button>
+      <button onClick={() => {navigate("/home")}}>Go To Home Page</button>
     </div>
+    </card>
+    
   );
 }
 
