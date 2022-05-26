@@ -52,7 +52,6 @@ function Loginpage({login, setLogin}) {
   };
 
   return (
-    <card>
       <div className="App">
       <div>
         <h3> Register User </h3>
@@ -95,7 +94,6 @@ function Loginpage({login, setLogin}) {
 
       <button onClick={logout} className ="sign"> Sign Out </button>
     </div>
-    </card>
     
   );
 }
