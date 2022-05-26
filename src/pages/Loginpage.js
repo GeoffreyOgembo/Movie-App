@@ -90,7 +90,7 @@ function Loginpage() {
       <h4> User Logged In: </h4>
       {user?.email}
 
-      <button onClick={logout}> Sign Out </button>
+      <button onClick={logout} className ="sign"> Sign Out </button>
     </div>
   );
 }
