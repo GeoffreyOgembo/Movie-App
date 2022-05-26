@@ -27,9 +27,11 @@ const App = () => {
           <Route exact path="/" element= {login ? <HomePage/> : <LoginPage setLogin = {setLogin} login = {login}/>}/>
           <Route element = {<ProtectedRoutes/>}>
           <Route exact path="/home" element={<HomePage/>} />
-          <Route exact path="/singleshow/:id" element={<SinglePage/>} />
           <Route exact path="*" element={<FourOhFour/>} />
           </Route>
+          <Route exact path="/singleshow/:id" element={<SinglePage/>} />
+          
+  
         </Routes>
       </div>
     </Router>
