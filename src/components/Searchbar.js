@@ -35,7 +35,7 @@ const Searchbar = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button className="btn btn-block" onClick={onSearchHandler}>
+        <button className="ser" onClick={onSearchHandler}>
           SEARCH
         </button>
       </form>
