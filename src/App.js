@@ -1,5 +1,5 @@
 /*import React { BrowserRouter as Router, Switch, Route } from "react-router-dom";*/
-import React from "react";
+import React, {useState} from "react"
 
 import {
   BrowserRouter as Router,
@@ -18,12 +18,13 @@ import FourOhFour from "./pages/404";
 import ProtectedRoutes from "./ProtectedRoutes";
 
 const App = () => {
+  const [login, setLogin] = useState(false)
   return (
     <Router>
       <Navbar />
       <div className="container">
         <Routes>
-          <Route exact path="/" element={<LoginPage/>} />
+          <Route exact path="/" element= {login ? <HomePage/> : <LoginPage setLogin = {setLogin} login = {login}/>}/>
           <Route element = {<ProtectedRoutes/>}>
           <Route exact path="/home" element={<HomePage/>} />
           <Route exact path="/singleshow/:id" element={<SinglePage/>} />

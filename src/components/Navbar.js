@@ -12,10 +12,10 @@ const Navbar = () => {
           </h3>
           <ul className="nav__links">
             <li className="links__link">
-              <Link to="/home">HOME</Link>
+              <Link to="/">HOME</Link>
             </li>
             <li className="links__link">
-              <Link to="/">LOGIN</Link>
+              <Link to="/login">LOGIN</Link>
             </li>
           </ul>
         </nav>

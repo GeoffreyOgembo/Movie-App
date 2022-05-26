@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import { useNavigate } from "react-router-dom";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -9,12 +8,11 @@ import {
 } from "firebase/auth";
 import { auth } from "../firebase-config";
 
-function Loginpage() {
+function Loginpage({login, setLogin}) {
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
-  let navigate = useNavigate();
 
   const [user, setUser] = useState({});
 
@@ -35,7 +33,7 @@ function Loginpage() {
     }
   };
 
-  const login = async () => {
+  const handleLogin = async () => {
     try {
       const user = await signInWithEmailAndPassword(
         auth,
@@ -43,6 +41,7 @@ function Loginpage() {
         loginPassword
       );
       console.log(user);
+      setLogin(!login)
     } catch (error) {
       console.log(error.message);
     }
@@ -88,14 +87,13 @@ function Loginpage() {
           }}
         />
 
-        <button onClick={login}> Login</button>
+        <button onClick={handleLogin}> Login</button>
       </div>
 
       <h4> User Logged In: </h4>
       {user?.email}
 
       <button onClick={logout} className ="sign"> Sign Out </button>
-      <button onClick={() => {navigate("/home")}}>Go To Home Page</button>
     </div>
     </card>
     
