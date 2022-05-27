@@ -19,8 +19,7 @@ function Loginpage({login, setLogin}) {
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
   });
-
-  const register = async () => {
+  const signUp = async () => {
     try {
       const user = await createUserWithEmailAndPassword(
         auth,
@@ -54,7 +53,7 @@ function Loginpage({login, setLogin}) {
   return (
       <div className="App">
       <div>
-        <h3> Register User </h3>
+        <h3>Sign Up</h3>
         <input
           placeholder="Email..."
           onChange={(event) => {
@@ -68,7 +67,7 @@ function Loginpage({login, setLogin}) {
           }}
         />
 
-         <button onClick={register}> Create User</button>
+         <button onClick={signUp}> Sign Up</button>
       </div>
 
       <div>
