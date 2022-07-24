@@ -1,4 +1,4 @@
-/*import React { BrowserRouter as Router, Switch, Route } from "react-router-dom";*/
+// import React, { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React, {useState} from "react"
 
 import {
@@ -39,3 +39,4 @@ const App = () => {
 };
 
 export default App;
+export {}
